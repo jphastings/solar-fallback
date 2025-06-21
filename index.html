@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website unavailable: not enough sun!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #eee;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+            text-align: center;
+            line-height: 1.4em;
+        }
+
+        svg {
+            max-width: 80vw;
+            width: 16em;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 1em;
+            right: 2em;
+            opacity: 0.5;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        a {
+            color: inherit;
+        }
+
+        html:not(.night) .night {
+            display: none;
+        }
+
+        html.night .day {
+            display: none;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: black;
+                color: #e0e0e0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-5.0 -10.0 110.0 105.0">
+        <path class="day" fill="currentColor" d="m81.102 44.191c-0.14844-6.6289-3.7969-12.688-9.5938-15.914-5.793-3.2266-12.863-3.1445-18.578 0.22266-2.7344-2.4258-6.2656-3.7578-9.918-3.7461-2.6797 0.015625-5.3086 0.73828-7.6172 2.0977-2.3086 1.3594-4.2188 3.3047-5.5312 5.6406-4.9688-0.90625-9.9609 1.4492-12.414 5.8633-6.0625 1.1328-10.449 6.4375-10.418 12.605 0.039062 5.6875 3.793 10.684 9.2461 12.305 0.86719 3.4062 2.8359 6.4336 5.6055 8.5977 2.7695 2.168 6.1758 3.3594 9.6914 3.3828h45.625c5.168 0 10.008-2.5312 12.953-6.7773 2.9492-4.2461 3.6289-9.6641 1.8242-14.504-1.8086-4.8438-5.8711-8.4922-10.875-9.7734zm-69.383 6.7695c0.003906-4.4961 3.6445-8.1367 8.1367-8.1406v-0.78125l0.25 0.79297 0.62109 0.019531 0.16016-0.59766c0.58984-2.207 2.207-3.9961 4.3438-4.8047 2.1367-0.80859 4.5352-0.54297 6.4375 0.72266l0.96094 0.63672 0.23438-1.1289h0.003907c0.83203-3.9961 3.9375-7.1289 7.9258-8 3.9883-0.87109 8.1133 0.68359 10.535 3.9727-1.8789 1.8711-3.2461 4.1914-3.9766 6.7422-2.9336-1.5586-6.4102-1.7422-9.4922-0.5-3.082 1.2422-5.4609 3.7812-6.4922 6.9414-6.7109 0.12109-12.16 5.4648-12.414 12.172-4.1055-0.45312-7.2227-3.9141-7.2344-8.0469zm65.48 19.598h-45.625c-6.1211 0-11.082-4.9609-11.082-11.082 0-6.1211 4.9609-11.082 11.082-11.082l0.96094 0.039063 0.16016-0.59766h0.003907c0.80469-3.0156 3.0117-5.4609 5.9336-6.5664 2.918-1.1055 6.1914-0.73828 8.7969 0.98438l0.96094 0.63672 0.23438-1.1289c1.4766-7.043 8.0391-11.828 15.195-11.086 7.1602 0.74219 12.598 6.7773 12.598 13.973 0 0.94922-0.09375 1.8945-0.28516 2.8242l-0.19531 0.96484 1.2617-0.046875v0.003906c6.1211 0 11.082 4.9609 11.082 11.082 0 6.1211-4.9609 11.082-11.082 11.082z"/>
+        <path class="night" fill="currentColor" d="m10.52 69.84c0.003907 4.4219 1.7617 8.6602 4.8867 11.785s7.3633 4.8828 11.785 4.8906h49.105c5.4883-0.003906 10.625-2.707 13.738-7.2305 3.1094-4.5234 3.793-10.289 1.8281-15.414-1.9648-5.1289-6.3242-8.957-11.664-10.246-0.078125-6.0234-2.8828-11.688-7.6328-15.395-4.7461-3.7109-10.922-5.0664-16.785-3.6836s-10.785 5.3516-13.375 10.789c-1.2812-0.34375-2.5977-0.51563-3.9219-0.51563-1.5508 0-3.0938 0.24609-4.5664 0.73047-4.2617-3.2266-6.2148-8.6602-4.9844-13.859 1.2344-5.1992 5.418-9.1836 10.672-10.152 1.875-0.34766 3.2266-1.9961 3.1953-3.9062-0.03125-1.9062-1.4336-3.5117-3.3203-3.7969-1.4062-0.22656-2.8281-0.34375-4.2539-0.35156-7.2188-0.007813-14.168 2.7539-19.406 7.7227-5.2422 4.9648-8.375 11.754-8.75 18.965-0.37891 7.2109 2.0312 14.289 6.7266 19.777-2.1211 2.8594-3.2695 6.3281-3.2773 9.8906zm27.965-20.332c2.0625-0.003906 4.082 0.60547 5.8008 1.75l0.96094 0.63672 0.23438-1.1289c1.1172-5.2969 4.9688-9.5977 10.109-11.293 5.1406-1.6914 10.793-0.51562 14.836 3.082 4.043 3.5977 5.8633 9.0781 4.7812 14.379l-0.19531 0.96484 1.2852-0.042969c3.1797-0.003907 6.2305 1.2578 8.4805 3.5039 2.2539 2.25 3.5156 5.3008 3.5156 8.4805 0 3.1836-1.2617 6.2344-3.5156 8.4805-2.25 2.25-5.3008 3.5117-8.4805 3.5078h-49.105c-3.1797 0.003906-6.2344-1.2578-8.4844-3.5078-2.25-2.2461-3.5156-5.2969-3.5156-8.4805 0-3.1797 1.2656-6.2305 3.5156-8.4805 2.25-2.2461 5.3047-3.5078 8.4844-3.5039l0.99219 0.039062 0.16016-0.60156v0.003906c1.2305-4.5898 5.3867-7.7812 10.141-7.7891zm-26.766-7.8242c0.007812-6.1445 2.418-12.039 6.7109-16.434 4.2969-4.3906 10.141-6.9297 16.281-7.0703-3.9883 1.7617-7.2109 4.8984-9.0781 8.8398-1.8633 3.9375-2.2539 8.418-1.0898 12.621 1.1602 4.1992 3.7969 7.8438 7.4219 10.266-2.3398 1.4961-4.0898 3.75-4.957 6.3867-2.7891 0.039062-5.5 0.94531-7.7539 2.5898-4.8008-4.4336-7.5312-10.668-7.5352-17.199z"/>
+    </svg>
+    <p>
+        The sun is hiding<br/>
+        This solar powered website<br/>
+        Is asleep, for now
+    </p>
+    <footer>Read more on <a href="https://www.byjp.me/posts/solar-server">JP's blog</a>. Icon by <a href="https://thenounproject.com/creator/valone/">Valone</a>.</footer>
+    <script>
+        function isNightTime() {
+            const now = new Date();
+            const lat = 52;
+            const lon = 0;
+            
+            // Calculate day of year
+            const start = new Date(now.getFullYear(), 0, 0);
+            const diff = now - start;
+            const dayOfYear = Math.floor(diff / (1000 * 60 * 60 * 24));
+            
+            // Solar declination angle
+            const declination = 23.45 * Math.sin(Math.PI * (284 + dayOfYear) / 365 * Math.PI / 180);
+            
+            // Hour angle for sunrise/sunset
+            const hourAngle = Math.acos(-Math.tan(lat * Math.PI / 180) * Math.tan(declination * Math.PI / 180));
+            
+            // Sunrise and sunset in hours from solar noon
+            const sunriseHour = 12 - hourAngle * 180 / Math.PI / 15;
+            const sunsetHour = 12 + hourAngle * 180 / Math.PI / 15;
+            
+            // Convert target location time to local time
+            const utcTime = now.getUTCHours() + now.getUTCMinutes() / 60;
+            const targetTime = utcTime + lon / 15; // 0° longitude = UTC
+            const localTargetTime = targetTime - now.getTimezoneOffset() / 60;
+            
+            // Normalize to 24-hour format
+            const normalizedTime = ((localTargetTime % 24) + 24) % 24;
+            
+            return normalizedTime < sunriseHour || normalizedTime > sunsetHour;
+        };
+        if (isNightTime()) {
+            document.documentElement.classList.add('night')
+        }
+    </script>
+</body>
+</html>
