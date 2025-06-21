@@ -1,3 +1,3 @@
-# Company site
+# (No) Solar fallback
 
-The company site (if such a holding page can be called something so grand) for the limited company I run for my software engineering consultancy work.
+this is the site i serve when my solar powered webserver is offline.
